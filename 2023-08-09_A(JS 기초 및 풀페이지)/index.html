@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .group-item.active {
+        text-decoration: line-through;
+        color: #888;
+      }
+      html {
+        width: 100%;
+        height: 100%;
+      }
+      body {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden;
+      }
+      .fullpage {
+        width: 100%;
+        height: 100%;
+        transform: translateY(0%);
+        transition: 0.5s cubic-bezier(0.52, -0.38, 0.68, 1.44);
+      }
+      .fullpage > div {
+        width: 100%;
+        height: 100%;
+      }
+      .fullpage > div:nth-child(1) {
+        background: red;
+      }
+      .fullpage > div:nth-child(2) {
+        background: blue;
+      }
+      .fullpage > div:nth-child(3) {
+        background: yellow;
+      }
+      .fullpage > div:nth-child(4) {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fullpage">
+      <div>0</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+    </div>
+    <!-- 주석 -->
+    <!-- <div id="group">
+      <p class="group-item">1</p>
+      <p class="group-item">2</p>
+      <p class="group-item">3</p>
+      <p class="group-item">4</p>
+      <p class="group-item">5</p>
+    </div>
+    <div>텍스트</div> -->
+    <script src="./js/common.js"></script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+
+
+.app{
+    width: min-content;
+    margin: 0 auto;
+}
+
+.calendar-title{
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.calendar-list{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 32px;
+}
+
+.calendar-month{
+    border-bottom: 3px solid #333;
+    padding: 8px 0;
+    /* 1rem => 0.5rem  */
+}
+
+.calendar-view{
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+}
+.calendar-view>div{
+    white-space: nowrap;
+    padding: 8px;
+}
+
+.calendar-view>.day:not(.current-month){
+    color: #999;
+}

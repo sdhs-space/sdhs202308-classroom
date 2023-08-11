@@ -1,0 +1,60 @@
+/* settings */
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+li{ list-style: none;}
+body{ color: #282828; }
+input[type="checkbox"]{ display:none; }
+
+/* utils */
+.none{
+    display: none !important;
+}
+
+/* app */
+.app{
+    margin: 16px auto;
+    width: min-content;
+}
+
+/* todo-input */
+.todo-input{
+    width: 300px;
+    padding: 8px 0;
+}
+
+/* todo-list */
+.todo-list{
+    padding-top: 16px;
+}
+
+.todo-list .todo-item:last-child{
+    border-bottom: 0;
+}
+
+/* todo-item */
+.todo-item{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.todo-item label{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+.todo-item label:has(input:checked){
+    background: green;
+}
+
+.todo-item .todo-txt{
+    flex: 1;
+}
+
+.todo-item.active .todo-txt{
+    text-decoration: line-through;
+    color: #888;
+}
